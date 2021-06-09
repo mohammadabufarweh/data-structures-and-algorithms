@@ -9,10 +9,12 @@ Write a function called addTwo that takes in an array and adds two to every valu
 const addTwo = (arr) => {
   // Solution code here...
   let val = [];
+
   for (let k = 0; k < arr.length; k++) {
     val.push(2 + arr[k]);
 
   }
+
   return val;
 };
 
@@ -27,6 +29,7 @@ For example, typeNum([1, 'bob' ,3]) returns [1,3].
 const typeNum = (arr) => {
   // Solution code here...
   let number = arr.filter(Number);
+
     return number;
 };
 
@@ -40,6 +43,7 @@ For example, containsAnd(['panda', 'ran', 'and']) returns ['panda', 'and'].
 
 const containsAnd = (arr) => 
   // Solution code here...
+
   arr.filter(val => val.includes('and'));
 
 
@@ -53,6 +57,7 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => 
   arr.filter(val => val % 2);
+  
   // Solution code here...
 
 
